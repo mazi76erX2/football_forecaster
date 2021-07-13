@@ -1,0 +1,12 @@
+Welcome {{ user }},
+
+To activate your {{ site_name }} Account, please verify your email address.
+Your account will not be created until your email address is confirmed.
+
+Confirm Your Email: https://{{ site.domain }}/accounts/activate/{{ activation_key }}
+
+Or, copy and paste the following URL into your browser:
+127.0.0.1:8000/activate/{{ activation_key }}
+{{ site.domain }}/activate/{{ activation_key }}
+
+This activation link expires in {{ expiration_days }} days.

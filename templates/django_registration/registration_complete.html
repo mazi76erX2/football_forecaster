@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-image">
+                        <h2 class="form-title">Sign up completed successfully</h2>
+                        <h3>Verify account before trying to log in</h3>
+                        <figure><img src="{% static "img/signup-image.jpg" %}" alt="sing up image"></figure>
+                        <a href="{% url 'home_page' %}" class="form-submit">Go to Homepage</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock content %}
